@@ -1,0 +1,57 @@
+# ===============
+# mpvmpr_cfg.yaml
+# ===============
+
+SEED: -1
+GeneratorMPV:
+  NumEvent: [1,1]
+  #number of events, i.e., single tracks. keep this as 1 and adjust at command line
+
+  NumParticle: [1,1] #number of particles in LAr
+
+  XRange: [-5000,5000] #mm
+  YRange: [-5000,5000] #mm
+  ZRange: [-30000,0] #mm
+  TRange: [0,10] #ns
+
+  AddParent: True
+
+  Particles:
+    -
+      PDG:      [-13] #the PDG number of the particle
+      NumRange: [1,1] #?
+      KERange:  [0, 1] #GeV
+      UseMom:   False
+      Weight:   1
+
+
+# GeneratorMPR:
+#   NumEvent: [1,1]
+#   NumParticle: [1,5]
+#   # XRange: [-300,300]
+#   # YRange: [-600,600]
+#   # ZRange: [-300,300]
+#   XRange: [-360,360]
+#   YRange: [-150,150]
+#   ZRange: [410,920]
+#   TRange: [0,10]
+#   Particles:
+#     -
+#       PDG:  [13]
+#       NumRange: [0,5]
+#       KERange:  [0,1]
+#       UseMom:   False
+#       Weight:   8
+#     -
+#       PDG:      [11]
+#       NumRange: [0,5]
+#       KERange:  [0,1]
+#       UseMom:   False
+#       Weight:   1
+
+#     -
+#       PDG:      [2112]
+#       NumRange: [0,5]
+#       KERange:  [0,1]
+#       UseMom:   False
+#       Weight:   1

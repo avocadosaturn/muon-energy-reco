@@ -1,0 +1,20 @@
+# ===============
+# mpvmpr_cfg.yaml
+# ===============
+
+SEED: -1
+GeneratorMPV:
+  NumEvent: [1,1]
+  NumParticle: [1,1]
+  XRange: [0,0]
+  YRange: [0,0]
+  ZRange: [500,500]
+  TRange: [0,0]
+  AddParent: True
+  Particles:
+    -
+      PDG:      [-13]
+      NumRange: [1,1]
+      KERange:  [0,1] 
+      UseMom:   Weight
+      True:   1

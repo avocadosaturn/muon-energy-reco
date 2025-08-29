@@ -1,0 +1,16 @@
+/edep/hitSeparation TPCActive_shape -1 mm
+/edep/hitSagitta drift 1.0 mm
+/edep/hitLength drift 1.0 mm
+/edep/db/set/neutronThreshold 0 MeV
+/edep/db/set/lengthThreshold 0 mm
+/edep/db/set/gammaThreshold 0 MeV
+/edep/random/timeRandomSeed
+/edep/update
+
+/generator/kinematics/bomb/config ./config_muon_0-1GeV.yaml
+/generator/kinematics/bomb/verbose 0
+/generator/kinematics/set bomb 
+
+/generator/count/fixed/number 1
+/generator/count/set fixed
+/generator/add
